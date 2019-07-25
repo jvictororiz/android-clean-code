@@ -4,4 +4,6 @@
     <string name="logo_bank">Logo Bank</string>
     <string name="login">Login</string>
     <string name="user">User</string>
+    <string name="error_login">Login inválido, favor insira um CPF ou E-mail</string>
+    <string name="password_login">Senha inválida</string>
 </resources>
