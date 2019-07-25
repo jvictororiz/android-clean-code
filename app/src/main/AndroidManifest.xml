@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mycompany.flightstatuslistview">
+    package="com.mycompany.exampleproject">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".homeScreen.HomeActivity">
+        <activity android:name="com.mycompany.exampleproject.homeScreen.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".detailScreen.FlightDetailActivity"/>
-        <activity android:name=".boardingScreen.BoardingActivity"/>
-        <activity android:name=".pastTripScreen.PastTripActivity"/>
+        <activity android:name="com.mycompany.exampleproject.detailScreen.FlightDetailActivity"/>
+        <activity android:name="com.mycompany.exampleproject.boardingScreen.BoardingActivity"/>
+        <activity android:name="com.mycompany.exampleproject.pastTripScreen.PastTripActivity"/>
     </application>
 
 </manifest>
