@@ -36,6 +36,7 @@
                 android:id="@+id/edt_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/gray_low"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -50,6 +51,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
+                android:textColor="@color/gray_low"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>

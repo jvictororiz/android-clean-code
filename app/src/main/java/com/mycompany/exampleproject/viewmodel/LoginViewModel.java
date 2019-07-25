@@ -1,7 +1,6 @@
 package com.mycompany.exampleproject.viewmodel;
 
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.ViewModel;
 
 import com.mycompany.exampleproject.R;
 import com.mycompany.exampleproject.SuperApplication;
@@ -9,12 +8,6 @@ import com.mycompany.exampleproject.Utils.TextUtils;
 import com.mycompany.exampleproject.data.request.UserLoginRequest;
 import com.mycompany.exampleproject.data.request.UserLoginResponse;
 import com.mycompany.exampleproject.repository.LoginRepository;
-
-import java.io.IOException;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class LoginViewModel extends BaseViewModel {
     private LoginRepository loginRepository = new LoginRepository();
@@ -41,7 +34,7 @@ public class LoginViewModel extends BaseViewModel {
         boolean validate = TextUtils.containsCapitalLetter(password)
                 && TextUtils.containsAlphaNumeric(password)
                 && TextUtils.containsSpecialCharacter(password);
-        if (!validate) {
+        if (!validate && !password.isEmpty()) {
             loginMessageError.setValue(SuperApplication.getSuperApplication().getString(R.string.password_login));
         }
         return validate;
@@ -50,7 +43,7 @@ public class LoginViewModel extends BaseViewModel {
     private boolean validateLogin(String user) {
         boolean validate = TextUtils.isCpf(user) || TextUtils.isEmail(user);
         if (!validate) {
-            loginMessageError.setValue(SuperApplication.getSuperApplication().getString(R.string.error_login));
+            passwordMessageError.setValue(SuperApplication.getSuperApplication().getString(R.string.error_login));
         }
         return validate;
     }
