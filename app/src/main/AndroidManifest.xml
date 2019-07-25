@@ -7,9 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".ui.activity.HomeActivity"></activity>
-        <activity android:name=".homeScreen.HomeActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -17,9 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".detailScreen.FlightDetailActivity" />
-        <activity android:name=".ui.activity.LoginActivity" />
-        <activity android:name=".pastTripScreen.PastTripActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
     </application>
 
 </manifest>

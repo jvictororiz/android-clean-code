@@ -2,6 +2,6 @@
     <string name="app_name">My Trips</string>
     <string name="password">Password</string>
     <string name="logo_bank">Logo Bank</string>
-
-
+    <string name="login">Login</string>
+    <string name="user">User</string>
 </resources>

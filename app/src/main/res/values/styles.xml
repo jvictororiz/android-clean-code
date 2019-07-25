@@ -1,7 +1,7 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimaryLogin</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/gray_low</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDarkLogin</item>
         <item name="colorAccent">@color/colorAccentLogin</item>
     </style>
@@ -9,6 +9,11 @@
 
     <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="android:paddingBottom">8dp</item>
+        <item name="boxStrokeColor">@color/gray_low</item>
+    </style>
+
+    <style name="ButtonLogin" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorAccentLogin</item>
     </style>
 
 </resources>
